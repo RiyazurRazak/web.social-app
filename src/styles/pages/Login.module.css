@@ -1,0 +1,60 @@
+.root{
+    display: flex;
+    height : 100vh;
+}
+.left {
+    flex : 0.4;
+    width : 40%;
+    background-color: #98ddca;
+    position: relative;
+}
+.left_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.right {
+    flex : 0.6;
+    width : 60%;
+    position: relative;
+    background-color: #deeeea;
+}
+.right_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;    
+}
+.logo{
+    margin-top: 30px;
+    margin-right: 50px;
+    text-align: right;
+    font-size: 50px;
+}
+
+
+@media screen and (max-width: 760px) {
+.root{
+    flex-direction: column;
+}
+.left, .right {
+    width: 100%;
+    flex : 1;
+    justify-content: center;
+}
+.right_container, .left_container{
+    position: inherit;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 30px;
+}
+.logo{
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 30px;
+}
+}

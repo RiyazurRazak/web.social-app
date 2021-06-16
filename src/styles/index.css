@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Baloo Tammudu 2', cursive !important;
+  scroll-behavior: smooth;
+  background: #f5f5f5;
+  color : #212121;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.719); 
+  border-radius: 10px;
+}

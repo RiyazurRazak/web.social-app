@@ -1,0 +1,54 @@
+.root{
+    display: flex;
+    max-height: 100vh;
+} 
+.right{
+    background-color: #fff5fd;
+    width: 80%;
+    flex: 0.8;
+    color: #121212;
+    position: relative;
+}
+.content_container{
+    margin: 20px;
+}
+.title{
+    font-size: 34px;
+    font-weight: 800;
+}
+.stories_container{
+    height: 30vh;
+}
+.posts {
+    position: sticky;
+    overflow-y: hidden;
+    height: 65vh;
+}
+.posts:hover{
+    overflow-y: scroll;
+}
+
+@media screen and (max-width:960px) {
+    .right{
+        width: 70%;
+        flex: 0.7;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .right{
+        width: 60%;
+        flex: 0.6;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .right {
+        width: 100%;
+        flex: 1;
+    }
+    .content_container{
+        margin: 5px;
+        margin-top: 20px;
+    }
+}
